@@ -75,7 +75,7 @@ def main():
       text_y = text_size[1] + 10
       cv2.putText(frame, "DETECTED", (text_x, text_y), font, 3, (0, 255, 0), 2)
 
-    # Display frame with (optional) gesture detection results
+    # Display frame with  gesture detection results
     from google.colab.patches import cv2_imshow
     cv2_imshow(frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
